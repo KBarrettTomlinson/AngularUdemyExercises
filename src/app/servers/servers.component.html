@@ -4,7 +4,8 @@
 <label>Server Name</label>
 <input type="text" class="form-control" [(ngModel)]="serverName">
 <app-button (click)="onCreateServer()"></app-button>
-{{serverCreationStatus}}
+<p *ngIf="serverCreated">Server named <b>{{serverName}}</b> was created</p>
+<!-- <p>{{serverCreationStatus}}</p> -->
 <hr>
 <label>User Name</label>
 <input type="text" class="form-control" [(ngModel)]="username">
