@@ -1,2 +1,12 @@
-<h2>servers component here for duty</h2>
+<h2>Servers List</h2>
 <app-server></app-server>
+<hr>
+<label>Server Name</label>
+<input type="text" class="form-control" [(ngModel)]="serverName">
+<app-button (click)="onCreateServer()"></app-button>
+{{serverCreationStatus}}
+<hr>
+<label>User Name</label>
+<input type="text" class="form-control" [(ngModel)]="username">
+<h2>Username: {{username}}</h2>
+<button class="btn btn-primary" [disabled]="username.length==0" (click)="resetUserName()">Reset Username</button>
