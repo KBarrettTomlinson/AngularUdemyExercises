@@ -1,11 +1,14 @@
+
+
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
-  selector: 'app-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  selector: 'app-server-button',
+  templateUrl: './server-button.component.html',
+  styleUrls: ['./server-button.component.css']
 })
-export class ButtonComponent implements OnInit {
+export class ServerButtonComponent implements OnInit {
   allowNewServer = false;
 
   constructor() {

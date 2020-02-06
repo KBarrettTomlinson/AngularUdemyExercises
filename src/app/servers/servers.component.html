@@ -5,7 +5,7 @@
 <hr>
 <label>Server Name</label>
 <input type="text" class="form-control" [(ngModel)]="serverName">
-<app-button (click)="onCreateServer()"></app-button>
+<app-server-button (click)="onCreateServer()"></app-server-button>
 <p *ngIf="serverCreated">Server named <b>{{serverName}}</b> was created</p>
 <!-- <p>{{serverCreationStatus}}</p> -->
 <hr>
