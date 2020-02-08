@@ -10,7 +10,7 @@ export class ServersComponent implements OnInit {
   serverCreated = false;
   serverName = "";
   username = "";
-  servers = ['TestServer', 'TestServer2'];
+  servers = [];
 
   constructor() { }
 
@@ -18,19 +18,12 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateServer(){
-    // this.serverCreationStatus = "Server was created. Name is " + this.serverName;
     this.serverCreated = true;
     this.servers.push(this.serverName);
   }
 
-
   resetUserName(){
     this.username = "";
   }
-
-  // onUpdateServerName(event: any){
-  //   console.log(event);
-  //   this.serverName = event.target.value;
-  // }
 
 }
